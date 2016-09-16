@@ -3,11 +3,9 @@ function changeImage(selected_url) {
         $('#preview').attr('src', selected_url);
         $('#preview').fadeTo(1000, 1);
     });
-    
-    
 }
 
-function animate_bigcard(){
+function animate_bigcard() {
     setTimeout(function(){
         $('.big_card img').animate({borderTopLeftRadius: 100, borderTopRightRadius: 100, borderBottomRightRadius: 100, borderBottomLeftRadius: 100}, 1000, function(){
             $('.big_card img').animate({borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomRightRadius: 0, borderBottomLeftRadius: 0}, 1000);
@@ -40,7 +38,7 @@ $(document).ready(function(){
     var sub_width = $('input[type=submit]').css('width');
     
     $('header').fadeTo(1000, 0.3, function () {
-        $('html, body').animate({scrollTop: $('#main').offset().top}, 1000/*, animate_bigcard()*/);
+        $('html, body').animate({scrollTop: $('#main').offset().top}, 1000);
     });
     
     $('input[type=submit]').mouseover(function(){
