@@ -31,7 +31,7 @@ function get_name_browser(){
 
 $(document).ready(function(){
     if (get_name_browser()=='Firefox'){
-        $('table p').css('height', 121)
+        $('table p').css('height', 121)//11
     };
     
     var sub_marginleft = $('input[type=submit]').css('margin-left');
