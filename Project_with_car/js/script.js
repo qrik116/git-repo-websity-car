@@ -30,21 +30,19 @@ function get_name_browser(){
 }
 
 $(document).ready(function(){
-    /*if (get_name_browser()=='Firefox'){
+    if (get_name_browser()=='Firefox'){
         $('table p').css('height', 121)//11
-    };*/
+    };
     
     var sub_marginleft = $('input[type=submit]').css('margin-left');
     var sub_width = $('input[type=submit]').css('width');
-    var full_width = $('select').css('width')
-    console.log(full_width);
     
-    $('#img').fadeTo(1000, 0.3, function () {
-        $('html, body').animate({scrollTop: $('nav').offset().top}, 1000);
+    $('header').fadeTo(1000, 0.3, function () {
+        $('html, body').animate({scrollTop: $('#main').offset().top}, 1000);
     });
     
     $('input[type=submit]').mouseover(function(){
-        $(this).animate({marginLeft: 0, width: full_width}, 1000);
+        $(this).animate({marginLeft: 0, width: 311}, 1000);
     });
     
     $('input[type=submit]').mouseleave(function(){
